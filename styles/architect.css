@@ -16,6 +16,11 @@
   border: none;
   cursor: pointer;
 }
+.banner-info {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+}
 
 /* Header Style */
 header {
@@ -57,39 +62,16 @@ nav li a {
   font-size: 4rem;
   font-weight: 800;
 }
-.banner-info {
-  color: #727272;
-  font-size: 1rem;
-  font-weight: 400;
-}
+
 .banner img {
   margin-top: 20px;
   width: 100%;
 }
-/* responsive media query */
-/* Mobile Device */
-@media screen and (max-width: 576px) {
-  header {
-    padding: 20px;
-  }
-  nav {
-    flex-direction: column;
-  }
-}
 
-/* Tablet Device */
-@media screen and (min-width: 576px) and (max-width: 960px) {
-  header {
-    padding: 20px;
-  }
-  nav {
-    flex-direction: column;
-  }
-}
 /* Main Style */
 main {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 70px auto;
 }
 .main-container {
   display: flex;
@@ -124,4 +106,32 @@ main {
   color: #ff900e;
   font-size: 3rem;
   font-weight: 700;
+}
+
+/* responsive media query */
+/* Mobile Device */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav,.main-container{
+    flex-direction: column;
+  }
+  .team-image{
+    grid-template-columns: 1fr;
+  }
+  .main-container-text{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Tablet Device */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 20px;
+  }
+  nav, .main-container {
+    flex-direction: column;
+  }
 }
