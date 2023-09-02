@@ -236,6 +236,9 @@ footer.footer-title {
   .facts-container {
     gap: 10px;
   }
+  footer{
+    margin:unset;
+  }
 }
 
 /* Tablet Device */
